@@ -23,7 +23,7 @@ namespace Minesweeper
         }
 
         // Stuff
-        bool game_flag = false, game_start = false, game_pause = false;
+        bool game_flag = false, game_start = false, game_pause = false, win_flag = false;
         Dictionary<Button, int> ajx = new Dictionary<Button, int>();
         Dictionary<Button, int> flx = new Dictionary<Button, int>();
         Button[,] box = new Button[8, 8];
@@ -74,7 +74,18 @@ namespace Minesweeper
             game_start = false;
             flags = 10;
             ajx.Clear();
-            for (int i = 0; i < 8; i++) for (int j = 0; j < 8; j++) flx[box[i, j]] = 0;
+            if (win_flag)
+            {
+                win_flag = false;
+                Title.Text = "MINESWEEPER";
+            }
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    flx[box[i, j]] = 0;
+                }
+            }
             Reset_Mines();
         }
 
@@ -275,7 +286,23 @@ namespace Minesweeper
 
             if (Win())
             {
-                // If Player wins
+                if (game_start) runtime.Dispose();
+                Title.Text = "💥 YOU WIN 💥";
+                Pause.Enabled = false;
+                game_pause = true;
+                win_flag = true;
+
+                for (int i = 0; i < 8; i++)
+                {
+                    for (int j = 0; j < 8; j++)
+                    {
+                        if (mines[i, j] == 1)
+                        {
+                            box[i, j].Text = "💀";
+                            box[i, j].Font = new Font("Consolas", 15F, FontStyle.Bold);
+                        }
+                    }
+                }
             }
         }
 
