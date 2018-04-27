@@ -38,13 +38,6 @@ namespace Minesweeper
             InitializeComponent();
             Pause.Enabled = false;
             Add_Boxes();
-            for (int i = 0; i < 8; i++)
-            {
-                for (int j = 0; j < 8; j++)
-                {
-
-                }
-            }
         }
 
         void ExitButtonClick(object sender, EventArgs e)
