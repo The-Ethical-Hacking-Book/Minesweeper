@@ -268,7 +268,7 @@ namespace Minesweeper
                             b.Enabled = false;
                             b.Text = ajx[b].ToString();
                             b.BackColor = Color.LightGray;
-
+                            b.Font = new Font("Consolas", 12F, FontStyle.Bold);
                         }
                         else
                         {
@@ -383,12 +383,14 @@ namespace Minesweeper
                         box[i, j].Enabled = false;
                         box[i, j].Text = ajx[box[i, j]].ToString();
                         box[i, j].BackColor = Color.LightGray;
+                        box[i, j].Font = new Font("Consolas", 12F, FontStyle.Bold);
                         break;
                     }
                     else
                     {
                         box[i, j].Enabled = false;
                         box[i, j].BackColor = Color.LightGray;
+                        box[i, j].Font = new Font("Consolas", 12F, FontStyle.Bold);
                     }
                 }
 
@@ -401,12 +403,14 @@ namespace Minesweeper
                         box[i, j].Enabled = false;
                         box[i, j].Text = ajx[box[i, j]].ToString();
                         box[i, j].BackColor = Color.LightGray;
+                        box[i, j].Font = new Font("Consolas", 12F, FontStyle.Bold);
                         break;
                     }
                     else
                     {
                         box[i, j].Enabled = false;
                         box[i, j].BackColor = Color.LightGray;
+                        box[i, j].Font = new Font("Consolas", 12F, FontStyle.Bold);
                     }
                 }
             }
