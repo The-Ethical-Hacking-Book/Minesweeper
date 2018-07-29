@@ -1,5 +1,5 @@
 # Minesweeper
-* Classic minesweeper written in C#.
+* "easy" minesweeper written in C#.
 * Rookie UI designing involved.
 
 # How To Play
