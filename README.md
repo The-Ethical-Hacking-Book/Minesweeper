@@ -3,8 +3,8 @@
 * Rookie UI designing involved.
 
 # How To Play
-https://www.wikihow.com/Play-Minesweeper
-Go to Minesweeper/bin/Debug/ and download Minesweeper.exe. No need to install. Just run the exe file.
+https://www.wikihow.com/Play-Minesweeper <br>
+Go to `Minesweeper/bin/Debug` and download `Minesweeper.exe`. No need to install. Just run the exe file.
 
 # Screenshot
 ![screenshot 21](https://user-images.githubusercontent.com/33657583/39392313-576c4632-4ad5-11e8-86c3-3fc50eb1d3a6.png)
