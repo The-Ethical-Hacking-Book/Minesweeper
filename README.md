@@ -1,6 +1,6 @@
 # Minesweeper
 * "easy" minesweeper implemented in C#.
-* Rookie UI designing involved.
+* Rookie UI design.
 
 # How To Play
 https://www.wikihow.com/Play-Minesweeper <br>
